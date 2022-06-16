@@ -44,10 +44,18 @@ $(document).ready(function () {
     infinite: true,
     speed: 1000,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 5000,
     prevArrow:
       '<button type="button" class="slick-prev"><img src="icons/arrow-left.svg"></button>',
     nextArrow:
       '<button type="button" class="slick-next"><img src="icons/arrow-right.svg"></button>',
+    responsive: [
+      {
+        breakpoint: 580,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
 });
