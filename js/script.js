@@ -13,7 +13,7 @@ document
 console.log("changed");
 
 let lastScroll = 0;
-const defaultOffset = 200;
+const defaultOffset = 100;
 
 const scrollPosition = () =>
   window.pageYOffset || document.documentElement.scrollTop;
@@ -37,4 +37,17 @@ window.addEventListener("scroll", function () {
     footer.classList.remove("footer-hide");
   }
   lastScroll = scrollPosition();
+});
+
+$(document).ready(function () {
+  $(".projects__slider").slick({
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    prevArrow:
+      '<button type="button" class="slick-prev"><img src="icons/arrow-left.svg"></button>',
+    nextArrow:
+      '<button type="button" class="slick-next"><img src="icons/arrow-right.svg"></button>',
+  });
 });
