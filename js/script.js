@@ -36,6 +36,15 @@ window.addEventListener("scroll", function () {
     menu.classList.remove("menu-hide");
     footer.classList.remove("footer-hide");
   }
+  if (
+    window.innerHeight + window.pageYOffset - 50 >=
+    document.body.offsetHeight
+  ) {
+    header.classList.remove("header-hide");
+    menu.classList.remove("menu-hide");
+    footer.classList.remove("footer-hide");
+  }
+
   lastScroll = scrollPosition();
 });
 
