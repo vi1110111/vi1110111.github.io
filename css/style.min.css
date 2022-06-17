@@ -507,8 +507,10 @@
     height: 200px;
   }
   .promo__moto {
+    text-align: center;
     padding-right: 30px;
     font-size: 35px;
+    margin-top: 40px;
   }
   .promo span {
     font-size: 45px;
