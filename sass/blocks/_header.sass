@@ -7,31 +7,39 @@
         justify-content: space-between
         height: 90px
         position: fixed
-        width: 1000px
+        width: 1600px
     &__logo
         z-index: 3
-        display: flex
-        align-items: center
-        font-weight: 300
-        color: #ffffff
         text-decoration: none
         text-transform: uppercase
-        font-size: 45px
-        margin-bottom: 0
+        font-weight: 300
+        color: #ffffff
+        font-size: 38px
+        line-height: 20px
+        margin-top: 25px
+        span
+            font-size: 15px
+            line-height: 15px;
         &:hover
-            color: #7c7c7c
+             color: #7c7c7c
+
+        
     &__burger
         z-index: 3
         cursor: pointer
         display: flex
         flex-direction: column
         justify-content: center
+        &:hover
+            span
+                background-color: #7c7c7c
         span
             background-color: #ffffff
             height: 3px
             width: 45px
             margin: 5px 0
 
+    
 
 .header-hide
     opacity: 0
