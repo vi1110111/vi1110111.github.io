@@ -54,7 +54,7 @@
             </div>
           </div>
           <h3 class="contacts__subheader">order price calculation</h3>
-          <form id="consultation-form" class="contacts__form" action="#">
+          <form id="consultation-form" class="contacts__form">
             <input
               class="contacts__input"
               name="name"
@@ -88,10 +88,10 @@
             />
             <input
               class="contacts__input"
-              name="email"
+              name="city"
               required
               placeholder="Country and City"
-              type="email"
+              type="text"
             />
             <textarea
               class="contacts__input text-input"
@@ -100,7 +100,11 @@
               rows="5"
               cols="33"
             ></textarea>
-            <button class="contacts__input" class="button button_submit">
+            <button
+              type="submit"
+              class="contacts__input"
+              class="button button_submit"
+            >
               calculate
             </button>
           </form>
@@ -133,14 +137,7 @@
       </div>
     </footer>
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/script.js"></script>
     <script src="js/sendMail.js"></script>
   </body>
